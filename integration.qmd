@@ -89,8 +89,7 @@ What should we do?
     - $m = 1$: Trapezoidal rule
     - $m = 2$: Simpson's rule
 
-<img src="images/quadrature.png" width="600" align="center"/>
-(Taken from Givens and Hoeting)
+![source: Givens and Hoeting](images/quadrature.png){width=600}
 
 ### Riemann rule
 
