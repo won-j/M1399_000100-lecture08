@@ -477,6 +477,7 @@ $$
     \langle \mathbf{p}, \mathbf{q} \rangle = \int_a^b p(x)q(x)dx: \quad \mathbb{P}^m(a,b) \times \mathbb{P}^m(a,b) \to \mathbb{R}
 $$
 for $\mathbf{p}=p(x)$ and $\mathbf{q}=q(x)$ in $\mathbb{P}^m(a,b)$, then $\langle \mathbf{p}, \mathbf{q} \rangle$ is an inner product of $\mathbf{p}$ and $\mathbf{q}$, and $\mathbb{P}^m(a,b)$ is an inner product space:
+
 1. $\langle \mathbf{p}, \mathbf{p} \rangle \ge 0$;
 2. $\langle \mathbf{p}, \mathbf{p} \rangle = 0 \iff \mathbf{p} = 0$, i.e., $p(x)=0$ for all $x\in[a, b]$;
 3. $\langle \alpha \mathbf{p}, \mathbf{q} \rangle = \alpha \langle \mathbf{p}, \mathbf{q} \rangle$, $\alpha \in \mathbb{R}$;
