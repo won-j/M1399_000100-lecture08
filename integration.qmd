@@ -445,7 +445,7 @@ $$
 $$
 where $w_j = \int_a^b L_j^m(x)dx$.
 
-$f(x) = \sum_{j=0}^m f(x_j)L_j^m(x)$
+*Proof* $f(x) = \sum_{j=0}^m f(x_j)L_j^m(x)$
 
 ## Gaussian quadrature
 
