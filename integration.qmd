@@ -12,7 +12,7 @@ filters:
   - collapse-output
 ---
 
-<!-- Requires 'collapse-output' quarto package: https://github.com/mcanouil/    quarto-collapse-output -->
+<!-- Requires 'collapse-output' quarto package: https://github.com/mcanouil/quarto-collapse-output -->
 
 ```{r}
 #| output-fold: true
@@ -712,7 +712,7 @@ sqrt(pi)   # int_{-\infty}^{\infty}exp(-x^2)dx
 Suppose $x$ is a random sample from a Binomial distribution with $n$ trials and success probability $p=\frac{e^{\theta}}{1 + e^{\theta}}$.
 Suppose the prior on $\theta$ is $N(0, \sigma^2)$. 
 
-* Prior density: $f_{\Theta}(\theta) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-x^2/(2\sigma^2)}$.
+* Prior density: $f_{\Theta}(\theta) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\theta^2/(2\sigma^2)}$.
 * Likelihood: $f_{X|\Theta}(x|\theta) = \binom{n}{x}p^x(1 - p)^{n-x}$, with
 $p=\frac{e^{\theta}}{1 + e^{\theta}}$.
 * Posterior density:
