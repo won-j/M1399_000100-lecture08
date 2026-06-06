@@ -716,12 +716,14 @@ Suppose the prior on $\theta$ is $N(0, \sigma^2)$.
 * Likelihood: $f_{X|\Theta}(x|\theta) = \binom{n}{x}p^x(1 - p)^{n-x}$, with
 $p=\frac{e^{\theta}}{1 + e^{\theta}}$.
 * Posterior density:
+$$
 \begin{align*}
     f_{\Theta|X}(\theta|x) &= \frac{f_{X|\Theta}(x | \theta)f_{\Theta}(\theta)}{\int_{-\infty}^{\infty}f_{X|\Theta}(x | \theta')f_{\Theta}(\theta')d\theta'}
     = \frac{p(\theta)^x[1-p(\theta)]^{n-x}e^{-\theta^2/(2\sigma^2)}}{\int_{-\infty}^{\infty}p(\theta)^x[1-p(\theta)]^{n-x}e^{-\theta^2/(2\sigma^2)}d\theta}
     \\
     &= \frac{e^{\theta x}[1+e^{\theta}]^{-n}e^{-\theta^2/(2\sigma^2)}}{\int_{-\infty}^{\infty}e^{\theta x}[1+e^{\theta}]^{-n}e^{-\theta^2/(2\sigma^2)}d\theta}
 \end{align*}
+$$
 
 Thus if we define $g(\theta) = \frac{e^{\theta x}}{[1 + e^{\theta}]^n}$,
 then the normalizing constant is
