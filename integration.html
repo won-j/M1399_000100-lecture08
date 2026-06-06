@@ -4920,12 +4920,14 @@ $weights
 <ul>
 <li>Prior density: <span class="math inline">\(f_{\Theta}(\theta) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\theta^2/(2\sigma^2)}\)</span>.</li>
 <li>Likelihood: <span class="math inline">\(f_{X|\Theta}(x|\theta) = \binom{n}{x}p^x(1 - p)^{n-x}\)</span>, with <span class="math inline">\(p=\frac{e^{\theta}}{1 + e^{\theta}}\)</span>.</li>
-<li>Posterior density: <span class="math display">\[\begin{align*}
+<li>Posterior density: <span class="math display">\[
+\begin{align*}
   f_{\Theta|X}(\theta|x) &amp;= \frac{f_{X|\Theta}(x | \theta)f_{\Theta}(\theta)}{\int_{-\infty}^{\infty}f_{X|\Theta}(x | \theta&#39;)f_{\Theta}(\theta&#39;)d\theta&#39;}
   = \frac{p(\theta)^x[1-p(\theta)]^{n-x}e^{-\theta^2/(2\sigma^2)}}{\int_{-\infty}^{\infty}p(\theta)^x[1-p(\theta)]^{n-x}e^{-\theta^2/(2\sigma^2)}d\theta}
   \\
   &amp;= \frac{e^{\theta x}[1+e^{\theta}]^{-n}e^{-\theta^2/(2\sigma^2)}}{\int_{-\infty}^{\infty}e^{\theta x}[1+e^{\theta}]^{-n}e^{-\theta^2/(2\sigma^2)}d\theta}
-\end{align*}\]</span></li>
+\end{align*}
+\]</span></li>
 </ul>
 <p>Thus if we define <span class="math inline">\(g(\theta) = \frac{e^{\theta x}}{[1 + e^{\theta}]^n}\)</span>, then the normalizing constant is <span class="math display">\[
 \sigma\sqrt{2}\int_{-\infty}^{\infty} g(\sigma\sqrt{2}y)w(y)dy
