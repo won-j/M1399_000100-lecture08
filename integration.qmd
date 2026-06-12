@@ -800,11 +800,11 @@ $$
 as $a \to \infty$, as in this case contributions to the integral is dominated by those around 0.
 This amounts to reduce the integral to integration against $N(0, 1/[ag''(0)])$. A formal statement of the Laplace approximation is given below.
 
-**Theorem 3**. Suppose $f$ and $g$ satisfy the following conditions
+**Theorem 3**. Suppose functions $f$ and $g$ satisfy the following conditions
 1. for every $\delta > 0$ there exists a $\rho > 0$ such that $g(x) - g(0) \ge \rho$ for all $x$ with $|x| \ge \delta$;
 2. $g$ is twice continuously differentiable in a neighborhood of 0 and $g''(0) > 0$;
 3. $f$ is continuous in a neighborhood of 0 and $f(0) > 0$;
-4. the integral $\int_{-\infty}^{\infty}f(x)e^{-ag(x)}dx$ is absolutely convergent for $a \ge a_0$.
+4. the integral $\int_{-\infty}^{\infty}f(x)e^{-ag(x)}dx$ is absolutely convergent for $a \ge a_0 > 0$.
 Then, 
 $$
     \int_{-\infty}^{\infty} f(x)e^{-a g(x)} dx
